@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>정규식</title>
+</head>
+<body>
+     
+     <form action="myform.html">
+        <label for="fname"> first name: </label>
+        <input type="text" id="fname" pattern="[0-9]{3}(-)[0-9]{4}(-)[0-9]{4}"><br>
+<!--        []이 한칸에는 0-9만 받을 수 있음-->
+<!--서버로 정보가 넘어가기전에 HTML상태에서 미리 걸러낼 수 있음-->
+        <label for="lname">last name:</label>
+        <input type="text" id="lname" required>
+         <button type="submit">제출버튼</button>
+         <button type="reset">초기화</button>
+    </form>
+<!--
+    <form action="myform.html">
+        <label for="fname"> first name: </label>
+        <input type="text" id="fname"><br>
+        <label for="lname">last name:</label>
+        <input type="text" id="lname">
+         <button type="submit">제출버튼</button>
+         <button type="reset">초기화</button>
+    </form>
+-->
+</body>
+</html>

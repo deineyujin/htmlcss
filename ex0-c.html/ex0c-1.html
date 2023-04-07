@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="myform.html">
+        <!--      form : 내용(label, input)을 서버로 보냄-->
+        <label for="fname"> first name: </label>
+        <!--        label은 필수가아님,아이디와 쌍을 이룸. id는 중복될 수 없다-->
+        <input type="text" id="fname" required><br>
+        <label for="lname">last name:</label>
+        <input type="text" id="lname" required>
+        <input type="submit"><hr>
+        체크박스 : <input type="checkbox">
+        체크박스 2 : <input type="checkbox"><hr>
+        라디오 : <input type="radio" name="gen">
+        라디오2 : <input type="radio" name="gen"><hr>
+<!--        체크박스는 중복선택가능, radio는 중복불가-->
+       패스워드 : <input type="password"><hr>
+       날짜 : <input type="date"><hr>
+       파일 : <input type="file">
+        <!--form은 submit와 한 쌍, (폼, 인풋데이터를 모은 뒤 전송),폼데이터를 제출버튼을 누른 후 action위치로 이동하게 함-->
+        <!--form 데이터 -->
+        <!--<form action="myform.html">
+        First name:<input>
+        Last name:<input>
+        <input type="submit">
+    </form> 
+    으로 줄일 수 있음-->
+    </form>
+</body>
+</html>

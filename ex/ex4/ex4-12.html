@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>자손선택자</title>
+    <style>
+        div>p{
+            color:blue;
+        }
+/*        div아래에 있는 모든 p, grandchild까지 포함/ >을 넣어서 '직속'의 의미를 포함*/
+/*
+        ,을 넣으면 div와 p 모두 포함
+        +를 넣으면
+*/
+        span>p{
+            font-family: sans-serif;
+            color: chartreuse;
+            font-size: 23px
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading</h1>
+    <div>
+        <p>child 1</p>
+        <p>child 2</p>
+        <span>
+            <p>grandchild</p>
+        </span>
+    </div>
+    <p>neighborhood child</p>
+</body>
+</html>
