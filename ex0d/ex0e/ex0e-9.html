@@ -1,0 +1,154 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box {
+            border: 2px solid black;
+            padding: 50px;
+        }
+
+        .box1 {
+            display: flex;
+            flex-direction: column;
+            float: right;
+        }
+
+        .title1 {
+            width: 200px;
+            height: 200px;
+            background-color: dimgray;
+        }
+
+        .title2 {
+            width: 200px;
+            height: 200px;
+            background-color: dimgray;
+        }
+
+        .box2 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .title3 {
+            width: 200px;
+            height: 200px;
+            background-color: dimgray;
+        }
+
+        .title4 {
+            width: 200px;
+            height: 200px;
+            background-color: dimgray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="box1">
+            <p class="title1">2</p>
+            <p class="title2">4</p>
+        </div>
+        <div class="box2">
+            <p class="title3">1</p>
+            <p class="title4">3</p>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+-->
+<!--<풀이></풀이>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>flex로 구현,풀이</title>
+    <style>
+        .container {
+            margin: auto;
+            /*            화면 중앙으로 위치하도록 여백이 생김*/
+            width: 1200px;
+            height: auto;
+            border: .5px solid grey;
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+
+        .card {
+            border-radius: 20px;
+            margin: auto;
+            width: 300px;
+            height: 400px;
+            background-color:white;
+        }
+    
+
+        .imgs {
+            border-radius: 20px 20px 0 0;
+            height: 65%;
+            background-color: aquamarine;
+            background-image: url("https://extmovie.com/files/attach/images/135/583/196/040/ed6a0e1fb60064444b3b7947b7892a8a.jpeg");
+            background-size: cover;
+        }
+
+        img {
+            height: 65%;
+            width: 100%;
+
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="https://mblogthumb-phinf.pstatic.net/20110531_165/czsunsapclub_1306830960821MbeeQ_JPEG/Poetry_WebBase.jpg?type=w2" alt="image1">
+            <div class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+        </div>
+        <div class="card">
+             <img src="https://mblogthumb-phinf.pstatic.net/20110531_165/czsunsapclub_1306830960821MbeeQ_JPEG/Poetry_WebBase.jpg?type=w2" alt="image2">
+            <div class="title"a>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, repellendus.</div>
+        </div>
+        <div class="card">
+            <img src="https://mblogthumb-phinf.pstatic.net/20110531_165/czsunsapclub_1306830960821MbeeQ_JPEG/Poetry_WebBase.jpg?type=w2" alt="image3">
+            <div class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+        </div>
+        <div class="card">
+             <img src="https://img2.daumcdn.net/thumb/R658x0.q70/?fname=https://t1.daumcdn.net/news/201807/30/newsen/20180730100605703klzk.jpg" alt="image4">
+            <div class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+        </div>
+        <div class="card">
+             <img src="https://mblogthumb-phinf.pstatic.net/20110531_39/czsunsapclub_1306830753249CCb1n_JPEG/%BE%CB%B6%F3%B8%B6%B8%A3.jpg?type=w2" alt="image5">
+            <div class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+        </div>
+        <div class="card">
+             <img src="https://mblogthumb-phinf.pstatic.net/20110531_165/czsunsapclub_1306830960821MbeeQ_JPEG/Poetry_WebBase.jpg?type=w2" alt="image6">
+            <div class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+        </div>
+        <div class="card">
+             <img src="https://mblogthumb-phinf.pstatic.net/20110531_51/czsunsapclub_1306830757707yuqMP_JPEG/the-girl-with-the-dragon-tattoo.jpg?type=w2" alt="image7">
+            <div class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+        </div>
+        <div class="card">
+             <img src="https://i.pinimg.com/originals/0a/6b/25/0a6b25b23dc386d0946b4d2299e57906.png" alt="image8">
+            <div class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+        </div>
+
+    </div>
+</body></html>

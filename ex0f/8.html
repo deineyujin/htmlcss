@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        background-color:aqua;
+        height: 200px;
+        width:200px;
+        margin:50px;
+        animation: mymove 4s infinite;
+    }
+    @keyframes mymove{
+        0%{
+/*            transform: rotate(50deg)*/
+        } 
+        25%{
+            transform: translateY(50px)
+        } 
+        75%{
+            transform: rotate(60deg)
+        } 
+        100%{
+            transform: translate(50px)
+        }
+    }
+    </style>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>플렉스방향 바꾸기. p168</title>
+    <style>
+        html,body{
+            height:100%
+        }
+        body {
+            display: flex;
+/*            justify-content: flex-end;*/
+            flex-direction: column;
+            align-items:flex-start;
+        }
+
+        /*body가 부모*/
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            
+            margin-left: 350px
+            왼쪽에 마진을 많이 줄 수록 오른쪽으로 이동
+
+        }
+
+        #second {
+            background-color: seagreen
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div id="second"></div>
+    <div></div>
+<!--    <img src="https://img.freepik.com/premium-photo/seascape-in-the-early-morning-sunrise-over-the-sea_416511-5490.jpg" alt="바다">-->
+<!--    div에 img를 넣어서 간격조절 가능!-->
+</body></html>

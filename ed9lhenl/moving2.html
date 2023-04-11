@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+/*
+        p{
+            display: flex;
+            justify-content: flex-start;}
+        }
+*/
+        body{
+            font: 12px "Arial", Gulim;, margin: 20px;
+        }
+        p {
+            padding: 10px;
+            font-size: 20px;
+            color: #fff;
+            width: 140px;
+            height: 120px;
+            background-color: cornflowerblue;
+            animation: myfirst 5s infinite;
+        }
+
+        @keyframes myfirst {
+            0% {
+/*                transform: scaleZ(2);*/
+                background-color:#cd4a4a;
+            }
+
+            25% {
+                width: 200px;
+/*                transform: scaleX(2);*/
+            }
+
+            75% {
+                height: 200px;
+/*                transform: scaleY(2);*/
+            }
+
+            100% {
+                width: -200px;
+/*                transform: scaleY(1/2);*/
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+<!--   <div></div>-->
+    <h1>Animation</h1>
+    <p>Animation is my pleasure.<br>Animationwork gives me great pleasure.</p>
+</body></html>
+
+<!--글자가 딸려서 늘어나지 않게..폭, 높이값을 조정해야함! transform사용 시 내부글자까지 늘어남!-->

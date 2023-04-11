@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>플렉스</title>
+    <style>
+        html,body{
+            height:100%
+        }
+        body {
+            display: flex;
+/*            align-items: stretch;*/
+/*            stretch를 줄때는 높이값을 지워야 함*/
+            align-items: center;
+/*            justify-content: space-between;*/
+/*            오브젝트 간의 간격만 균등하게*/
+/*            justify-content: space-evenly;*/
+/*            모든 간격을 균등하게함 */
+        }
+
+        /*body가 부모*/
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            
+            margin-left: 350px
+            왼쪽에 마진을 많이 줄 수록 오른쪽으로 이동
+
+        }
+
+        #second {
+            background-color: seagreen
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div id="second"></div>
+    <div></div>
+    <img src="https://img.freepik.com/premium-photo/seascape-in-the-early-morning-sunrise-over-the-sea_416511-5490.jpg" alt="바다">
+<!--    div에 img를 넣어서 간격조절 가능!-->
+</body></html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>속성선택자</title>
+    <style>
+   h3[class] {color:blue}
+/*p[class*="icox"] {color:red}--> */
+/*        icox가 들어간 모든 것*/
+/*p[class$="icox"] {color:red}-->*/
+/*p[class|="icox"] {color:red}-->*/
+/*        icox가 뒤에 붙은 것*/
+/*p[class^="icox"] {color:red}-->*/
+/*        icox가 앞에 붙은 것*/
+/*p[class~="icox"] {color : red}-->*/
+/*        icox요소를 가진것을 선택, 띄어쓰기까지 반응함*/
+/*JS는 하이픈(-)을 싫어함, big-house를 bigHouse로 표기 */
+    </style>
+</head>
+<body>
+    <h3 class="logo">서울특별시</h3>
+    <h3>경기도</h3>
+    <p class="icox">주소록을 작성합니다.</p>
+    <p class="icoxpage">전화번호부를 작성합니다.</p>
+    <p class="screenicox">건강기록부를 작성합니다.</p>
+    <p class="I icox U">금전출납부를 작성합니다.</p>
+    <p class= "icox-1">손익계산서를 작성합니다.</p>
+</body>
+</html>
+
+
+<!--p의 속성은 클래스 []안에 속성값을 쓰면 그 속성값만 가진 태그에 적용-->

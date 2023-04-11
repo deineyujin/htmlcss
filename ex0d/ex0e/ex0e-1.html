@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100%
+        }
+
+        .header {
+            border-radius: 15px;
+            height: 65px;
+            background-color: mediumpurple;
+
+        }
+
+        .nav {
+            margin: 5px 0;
+            border-radius: 15px;
+            width: 80px;
+            height: 120px;
+            background-color: burlywood;
+            display: flex
+        }
+
+        .main {
+            /*            축약형 : */
+            /*            height: 100px;*/
+            /*            flex-grow: 1;*/
+            /*            flex-shrink: 1;*/
+            /*            flex-basis: 0;*/
+            /*        위 세가지를 합쳐서 flex=1로 표현가능*/
+            /*    창을 최소화할 때, 어느지점까지 사이즈를 유지하도록 하는 값*/
+            display: flex;
+            flex: 3;
+
+        }
+
+        .article {
+            background-color: antiquewhite;
+            flex: 3;
+
+        }
+
+        .footer {
+            height: 20px;
+            background-color: darksalmon;
+        }
+
+        h1 {
+            margin: 0px;
+            padding: 0px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container"></div>
+    <h1>
+        <div class="header">Blog</div>
+    </h1>
+    <div class="nav">
+        <h4>nav</h4>
+        <a href="https://www.naver.com/">메인</a>
+        <a href="https://nid.naver.com/nidlogin.login?url=https%3A%2F%2Fmail.naver.com%2F">로그인</a>
+        <a href="https://kin.naver.com/">회원가입</a>
+    </div>
+    <div class="main">
+        <div class="article">
+            <div>fddddd</div>
+        </div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+
+</html>

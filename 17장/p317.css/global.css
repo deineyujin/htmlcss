@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import "p317.reset.css";
+@import "p317.variable.css";
+    *{
+        box-sizing: border-box;
+    }
+body{
+font-family: "Roboto", sans-serif;
+        background-color: var(--background-purple);
+        color: antiquewhite;
+        
+    }
+input{
+    border:none;
+    outline:none;
+    appearance:none;
+    
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>wrap</title>
+    <style>
+        div{
+            border: 5px dotted #000;
+            width:300px;
+/*            word-wrap: 비아시아권언어로 된 문자열에 제약을 가하는 태그*/
+/*            word-wrap: break-word;*/
+/*            비아시아권의 경우, 띄어쓰기 없이 연속된 문자열은 normal사용 시 라인을 벗어남. break-word를 사용하여 강제로끊어서 줄바꿈
+            아시아언어의 경우 normal을 사용해도 튀어나가지 않음*/
+            word-break: keep-all;
+/* 비아시아+아시아언어로 된 문자열이 border라인을 벗어남.*/
+            word-break: normal;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+        ㄱㄷㄱㄷㄱㄷㄱㄷㄱㄷㄱㄷㄱㄷㄱㄷㄱㄷㄱㄷㄱㄷㄱ
+        https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=11pro+&oquery=11pro+case&tqi=iuGTOdp0Jy0ssA9qkdVsssssta8-318536 
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed culpa tenetur, quam dolorum ipsa, sit enim facilis mollitia quis? Commodi, cupiditate nulla sunt eaque porro non recusandae quaerat, vel voluptas.</div>30
+    </div>
+</body>
+</html>

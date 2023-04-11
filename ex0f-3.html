@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .ball {
+            width: 200px;
+            height: 200px;
+            background-color: brown;
+            border-radius: 100%;
+/*            transition: transform 1s ease-in-out;*/
+            transition: 300ms linear;
+            animation: move 2s infinite;
+        }
+
+        .ball:hover {
+            transform: translateY(400px);
+            transform: skew(100deg);
+        }
+/*.ball:hover {*/
+/*            transform: skew(100deg);*/
+/*        }*/
+        @keyframes move{
+        0% {transform: translateY(100px)}
+        25% {transform: translateY(100px)}
+        25% {transform: translateY(100px)}
+        75% {transform: translateY(600px)}
+        100% {transform: translateY(100px)}
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="ball"></div>
+</body></html>
+
+
+
+
+

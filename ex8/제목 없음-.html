@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        p:nth-of-type(2n+1){
+        color: red;
+        }
+/*        타입이 아닌 전부를 셈*/
+/*        속성값에 odd(홀)/even(짝)을 넣을수도 있음*/
+/*
+        p:nth-child(2n){
+            color: aquamarine;
+        }
+*/
+    </style>
+</head>
+<body>
+    <div>div{여기는 카운트 세는 곳이 아님}*2+p{$번째 p 태그}*3</div>
+    <p>1번째태그</p>
+    <p>2번째태그</p>
+    <div>여기는 카운트 세는 곳이 아님</div>
+    <p>3번째태그</p>
+    <p>4번째태그</p>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex wrap : 바둑판 만들기</title>
+    <style>
+        container{
+            width:300px;
+            border:5px solid #123456;
+            height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+/*            align-content: flex-end;*/
+/*            flex-wrap: wrap;align-content: flex-end는 하나의 쌍*/
+                
+        }
+        div{
+            background-color: chocolate;
+            width: 100px;
+            height: 100px;
+/*            margin: 5px;*/
+        }
+        .ck{
+            align-self: flex-end;
+/*            align-self, align-content와 중복해서 사용될 수 없다*/
+            
+        }
+    </style>
+</head>
+<body>
+   <container>
+    <div></div>
+    <div class="ck"></div>
+    <div></div>
+    <div></div>
+     <div class="ck"></div>
+    <div></div>
+    </container>
+</body>
+</html>
